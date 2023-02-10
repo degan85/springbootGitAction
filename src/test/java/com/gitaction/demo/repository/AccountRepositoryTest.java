@@ -28,5 +28,7 @@ public class AccountRepositoryTest {
 
         Optional<Account> result = repository.findById(1);
         assertThat(result.orElse(new Account()).getFirstName()).isEqualTo("first");
+
+        assertThat(true).isTrue();
     }
 }
